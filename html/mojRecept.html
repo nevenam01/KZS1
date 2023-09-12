@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vaš recept</title>
+    <link rel="icon" href="..//slike//faviconAlmina.png">
+	<link rel="stylesheet" href="..//css//forma.css">
+</head>
+<body>
+	<form enctype="multipart/form-data">
+		<h1>Vaš recept</h1>
+		<label for="ime">Ime i prezime:</label>
+		<input type="text" id="ime" name="ime" required oninvalid="this.setCustomValidity('Molimo vas popunite zadato polje')" oninput="this.setCustomValidity('')" >
+
+		<label for="njela">Naziv jela:</label>
+		<input type="text" id="njela" name="njela" required oninvalid="this.setCustomValidity('Molimo vas popunite zadato polje')" oninput="this.setCustomValidity('')" >
+
+		<label for="brOsoba">Broj osoba:</label>
+		<input type="text" id="brOsoba" name="brOsoba" required oninvalid="this.setCustomValidity('Molimo vas popunite zadato polje')" oninput="this.setCustomValidity('')" >
+
+		<label for="vreme">Vreme pripreme (u minutima):</label>
+		<input type="text" id="vreme" name="vreme" required oninvalid="this.setCustomValidity('Molimo vas popunite zadato polje')" oninput="this.setCustomValidity('')" >
+
+		<div class="radio-group">
+			<label>Težina pripreme:</label >
+			<label for="lako"><input type="radio" id="lako" name="tezinaPripreme" value="lako" checked> Lako</label>
+			<label for="srednje"><input type="radio" id="srednje" name="tezinaPripreme" value="srednje" > Srednje</label>
+			<label for="tesko"><input type="radio" id="tesko" name="tezinaPripreme" value="tesko"> Teško</label>
+		</div>
+
+		<label for="comments">Priložite Vaš recept:</label>
+		<textarea id="vasRecept" name="vasRecept" required oninvalid="this.setCustomValidity('Molimo vas popunite zadato polje')" oninput="this.setCustomValidity('')"></textarea  >
+
+		<input type="file" value="Pretraži" id="slika" name="slika" accept=".jpeg,.jpg,.png,.svg" style="display: none;">
+		<button type="button" onclick="document.getElementById('slika').click()" class="slika">Dodaj sliku</button>
+
+		<div class="form-container">
+		<input type="submit" value="Pošalji">
+	</div>
+	</form>
+	<script src="../js/forma.js"></script>
+</body>
+</html>

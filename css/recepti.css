@@ -1,0 +1,196 @@
+.str2{
+    background-color: #a08679 ;
+    flex-wrap: wrap;
+     
+}
+
+h1{
+    color:#6a4a3a;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+.jela {
+    position:relative;
+    top:40%;
+    display: flex;
+    justify-content: center;
+    color: #6a4a3a;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 10%;
+    margin-bottom: 500px;
+    font-family: sans-serif;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+img{
+    position: relative;
+    left:30%;
+    width: 40%;
+}
+.klasa1{
+    width: 80%;
+    justify-content: center; 
+}
+.klasa2{
+    padding-left: 7%;
+}
+.klasa3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+#dugme{
+    background: #6a4a3a;
+    border: #392f26;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    color: #c7bdad ;
+   
+}
+
+.dugme1{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: serif;
+    padding-top: 20px;
+}
+.kategorija1{
+    text-align: left;
+}   
+.kategorija2 {
+    text-align: left;
+    
+}
+.sastojci{
+    text-align: center;
+ }
+.ikonica{
+    float: inline-start;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+h2{
+    color: #8b6c5c;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.klasa1 h2,.klasa2 h2{
+    text-align: center;
+} 
+
+.page-tools div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10%;
+    column-gap: .5px ;
+    justify-content: center;
+}
+
+.page-tools .container span {
+    display: inline;
+    height: 40px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.page-tools .container span.lite {
+    border-color: #6a4a3a;
+    color: #6a4a3a;
+}
+.page-tools .container span.dark {
+    background: #6a4a3a;
+    color: #d4caca;
+}
+
+@media screen and (max-width: 1183px) {
+
+    .dugme1{
+        margin-left: 5%;
+    }
+    .klasa3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 21%;
+       }
+    }
+@media screen and (max-width: 960px) {
+    .jela {
+        display: flex;
+        flex-direction: column;
+    }
+    .klasa1{
+        padding-left: 12%;
+    }
+}
+@media screen and (max-width: 952px){
+    .klasa3{
+    padding-left: 19%;
+    }
+   
+}
+@media screen and (max-width: 770px) {
+    .page-tools div {
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+    
+    .klasa3 {
+        /* display: flex;
+        flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        margin-left: 7%;
+        padding-left: 21%;
+    }
+    img {
+        left: 10%;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    .jela {
+        /* display: flex;
+        flex-direction: column; */
+        padding: auto;
+        margin: auto;
+    }
+    .page-tools .container span {
+        font-size: 10px;
+        text-transform: lowercase;
+    }
+    .klasa1,.klasa2 {
+        margin-right: 10%;
+        
+    }
+
+}
